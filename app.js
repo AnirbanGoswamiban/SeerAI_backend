@@ -67,7 +67,7 @@ app.use('/api', apiRoutes);
 // Serve static assets if in production
 
   // Set static folder
- const mockS3Path = path.join(__dirname, "../server/MockS3");
+ const mockS3Path = path.join(__dirname, "./MockS3");
  app.use("/SeerAI", express.static(mockS3Path));
 
   // Any route that doesn't match API routes should serve React app
